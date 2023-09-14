@@ -1,0 +1,5 @@
+applications_siemen/mcnf/*.o
+output-mcnf-pdcgm.txt
+applications_siemen/mcnf/mcnf-pdcgm
+.vscode/
+*~
