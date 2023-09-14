@@ -1,0 +1,13 @@
+bin/**
+!bin/.gitkeep
+!bin/*/
+!bin/*/.gitkeep
+build/*.o
+lib/*.a
+lib/*.so
+lib/*.so.*
+doc/*.aux
+doc/*.log
+doc/*.toc
+Matlab/build/*/*.o
+Matlab/*.mexa64

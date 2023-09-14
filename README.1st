@@ -1,0 +1,80 @@
+
+*** PDCGM 2.1: README FILE
+
+Authors: 
+> Jacek Gondzio (j.gondzio@ed.ac.uk)
+> Pablo Gonzalez-Brevis (p.gonzalez-brevis@sms.ed.ac.uk)
+> Pedro Munari (pedro.munari@gmail.com)
+
+This file is a short version of the PDCGM 2.1 MANUAL, available in this folder. 
+For a complete description, please see 'PDCGM_manual.pdf'.
+
+*** INSTALLATION OF PDCGM
+
+PDCGM/HOPDM is distributed in a form of compressed tar'ed and gzip'ed file: 'pdcgmDEMOv2.1.tar.gz'
+The implementation has been tested in Ubuntu with 32 and 64bits architectures.
+
+Once you get it, type:
+> tar xvfz pdcgmDEMOv2.1.tar.gz
+to create a new subdirectory 'pdcgmDEMOv2.1' in the current directory. 
+
+Once you have uncrompessed the file, enter to 'pdcgmDEMOv2.1' folder and look at its content 
+
+You will find the following subdirectories:
+  applications	contains a number of applications which use libhopdm and libpdcgm;
+  data		    instance files for the applications;
+  hopdm      	contains the HOPDM library;
+  interface  	contains a C interface to HOPDM library;
+  mkfhosts   	contains examples of files which specify the names of compilers, paths to libraries, and a number of compilation options;
+  pdcgm      	contains the PDCGM library;
+
+and two files: 
+  README.1st         the short note you are reading now;
+  PDCGM_manual.pdf   a manual for using the PDCGM
+
+*** TO INSTALL PDCGM/HOPDM ON *UBUNTU*:
+
+PDCGM requires the library 'libf2c'. To install it in your system, 
+open a Terminal window and type:
+
+> sudo apt-get install libf2c2
+> sudo apt-get install libf2c2-dev
+> sudo rm /usr/lib/libf2c.so && sudo ln -s /usr/lib/libf2c.a /usr/lib/libf2c.so
+
+Your makefile on the folder mkfhosts should have the line: 
+
+  LIBS= -lm -lf2c
+
+just below the tag '#Libraries:'. 
+
+In all our applications we use 'munari' located in mkfhosts... have a look!
+
+*** APPLICATIONS
+
+We provide the user with source files for seven different applications.
+In the application directory you will find the following subdirectories:
+- mcnf, mkl, tssp, clspst, csp, vrptw, demo_pdcgm
+Please see the manual for further description on how to run these applications.
+
+Some of the applications depend on third-part packages/libraries. Namely, 'mkl' depends on 
+the SHOGUN Machine Learning Toolbox (http://shogun-toolbox.org/) and 'tssp' depends on the 
+IBM CPLEX Optimizer package (http://www-01.ibm.com/software/commerce/optimization/cplex-optimizer/).
+Please, make sure you have these packages installed and properly working on you machine,
+before compiling and running the corresponding PDCGM applications.
+
+*** ATTENTION
+
+We provide PDCGM code with no warranty, so be aware of using it at your own risk. 
+We are not able to provide support about the code, but we would appreciate if you 
+could report any bug you may find when using the code. We would be happy to hearing 
+from you about your experience while using the code, specially about the applications 
+you implement and the results you may obtain. This code must be used for academic 
+purposes only and should never be redistributed. Please, refer to one of the authors 
+if someone is interested in using it. When reporting the use of the code, please cite 
+the paper in EJOR (reference given in the beginning of this manual).
+ 
+We wish you a lot of fun when running PDCGM/HOPDM code :)
+
+Best regards,
+Jacek, Pablo and Pedro
+

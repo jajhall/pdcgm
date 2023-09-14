@@ -1,0 +1,14 @@
+CXX = g++
+CCC=g++
+
+#Compilation options:
+CFLAGS= -lm -O2 -no-pie -g -fopenmp
+#CXXFLAGS = -std=c++17 -Wall -Wextra -Wno-sign-compare -I../../ipx-master/src -I../../ipx-master/include -I../../ipx-master/third-party
+CXXFLAGS = -std=c++17 -I../../ipx-master/src -I../../ipx-master/include -I../../ipx-master/third-party
+
+DEFINE= -DINTS=long
+
+#Libraries:
+LIBS= -lm -lf2c 
+RANLIB= ranlib
+

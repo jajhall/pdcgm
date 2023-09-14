@@ -1,0 +1,28 @@
+
+./mcnf-pdcgm ../../data/mcnf/grid1 0 1 
+./mcnf-pdcgm ../../data/mcnf/grid2 0 1 
+./mcnf-pdcgm ../../data/mcnf/grid3 0 1 
+./mcnf-pdcgm ../../data/mcnf/grid4 0 1 
+./mcnf-pdcgm ../../data/mcnf/grid5 0 1 
+./mcnf-pdcgm ../../data/mcnf/grid6 0 1 
+./mcnf-pdcgm ../../data/mcnf/grid7 0 1 
+./mcnf-pdcgm ../../data/mcnf/grid8 0 1 
+./mcnf-pdcgm ../../data/mcnf/grid9 0 1 
+./mcnf-pdcgm ../../data/mcnf/grid10 0 1 
+./mcnf-pdcgm ../../data/mcnf/grid11 0 1 
+./mcnf-pdcgm ../../data/mcnf/grid12 0 1 
+./mcnf-pdcgm ../../data/mcnf/grid13 0 1 
+./mcnf-pdcgm ../../data/mcnf/grid14 0 1 
+./mcnf-pdcgm ../../data/mcnf/grid15 0 1 
+
+./mcnf-pdcgm ../../data/mcnf/planar30 0 1 
+./mcnf-pdcgm ../../data/mcnf/planar50 0 1 
+./mcnf-pdcgm ../../data/mcnf/planar80 0 1  
+./mcnf-pdcgm ../../data/mcnf/planar100 0 1 
+./mcnf-pdcgm ../../data/mcnf/planar150 0 1 
+./mcnf-pdcgm ../../data/mcnf/planar300 0 1 
+./mcnf-pdcgm ../../data/mcnf/planar500 0 1 
+./mcnf-pdcgm ../../data/mcnf/planar800 0 1 
+./mcnf-pdcgm ../../data/mcnf/planar1000 0 1
+./mcnf-pdcgm ../../data/mcnf/planar2500 0 1
+

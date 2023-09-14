@@ -1,0 +1,38 @@
+
+FORMAT:
+
+* Each instance file contains the description of the network:
+
+    - The first line gives the instance name
+    - The second line gives <# of nodes>, <# of arcs>, <# of commodities>, <scale factor> 
+    - <# of arcs> lines with the description of the links: origin  destination  capacity
+    - <# of commodities> lines with the description of commodities: source_node  sink_node  demand
+
+  Remark: <scale factor> is use to multiply the original requirements of the commodity demands)
+
+
+INSTANCES DESCRIPTION:
+
+* The instances (planar and grid problems) were obtained from: 
+    http://www.di.unipi.it/di/groups/optimize/Data/MMCF.html#Plnr
+  
+  The following description is given in the mentioned url:
+  "These two sets of test problems, planar networks and grid networks, originate from the paper [LY04]. 
+   Commodities are pairs of Origin and Destination nodes in these two problem sets.
+   For the set of planar networks, nodes are randomly chosen as points in the plane, and arcs link 
+   neighbour nodes in such a way that the resulting graph is planar. The origin and destination nodes 
+   are randomly chosen among the node set. Arc costs are euclidean distances, while demands and capacities 
+   are uniformly distributed in given intervals. There are 10 instances(760k). The planarn files contains 
+   an instance with n nodes, n going from 30 to 2500. The format.doc text file describes of the format of 
+   the instances. The regular structure of grid networks make it easier to make comparisons between various 
+   solutions methods. Note that there is usually a large number of paths between two nodes in a grid network,
+   this may make solution methods based on path generation less efficient for this problem set. The set 
+   contains 15 instances(672k), with the number of nodes ranging between 25 and 1225. The nodes are 
+   organized as a regular grid. Thus there are four incoming and four outgoing arcs for every internal node 
+   of the grid. The arc costs, commodities, and demands are generated similar to that of planar networks. 
+   The format.doc text file describes of the format of the instances. Note that the format of those instances 
+   is not among those that are read by Graph. Anybody willing to provide a translator?"  
+
+Pedro Munari [pedro.munari@gmail.com]
+Last updated: July, 2013.
+
