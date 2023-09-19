@@ -5,7 +5,7 @@
 #include <iostream>
 #include <math.h>
 #include <cassert>
-#include "lp_solver.h"
+#include "ipm/ipx/lp_solver.h"
 
 #define PDCGM_BIG			  1.0e+50
 using Int = ipxint;

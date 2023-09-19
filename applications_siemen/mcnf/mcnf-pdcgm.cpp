@@ -20,6 +20,8 @@
  *
  */
 
+//#include "HiGHS.h"
+#include "parallel/HighsParallel.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -30,7 +32,7 @@
 #include <float.h>
 #include <assert.h>
 #include <math.h>
-#include <omp.h>  
+#include <omp.h>
 
 #define MCNF_TOL_ZERO 1.E-6
 static int USE_ACTIVE_SET = 0;
@@ -359,6 +361,7 @@ int MCNF_linear_solve(Graph * G, Demande * dem, int nb_dem, int aggregated)
 /* C MAIN FUNCTION */
 int main (int argc, char *argv[])
 {
+  highs::parallel::initialize_scheduler(1);
     /* Auxiliary variables */
     int nb_dem, aggregated, oriented, begin_zero, with_cost;
         

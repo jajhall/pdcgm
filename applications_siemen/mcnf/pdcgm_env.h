@@ -10,7 +10,7 @@
 #include<iostream>
 #include <sys/time.h> 
 #include <memory>
-#include "lp_solver.h"
+#include "ipm/ipx/lp_solver.h"
 class PDCGM_env;
 
 typedef short (*Oracle_function) (double *, double *, PDCGM_env&, void*);
